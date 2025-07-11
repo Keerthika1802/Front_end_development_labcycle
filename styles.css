@@ -1,39 +1,19 @@
-.box{
- width:400px;
- height:300px;
- border:2px solid #333;
- padding:20px;
- margin:30px auto;
+* {
+    font-family: 'Yusei Magic', sans-serif;
 }
-.box h1{
-font-size:24px;
-margin-bottom:10px;
-}
-#p1{
- font-size:16px;
- margin-top:10px;
- margin-bottom:10px;
- padding:10px;
- background-color: #f0f0f0;
-}
-.box img{
- width:100%;
- margin:10px 0;
-}
-#b1{
- width:200px;
- padding:20px;
- border:5px solid #000;
- margin:20px;
- background-color:#ccc;
- box-sizing:content-box;
-}
-#b2{
- width:200px;
- padding:20px;
- border:5px solid #000;
- margin:20px;
- background-color:#ccc;
- box-sizing:border-box;
-}
+.mycontainer {
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-image: url('https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg');
+    background-position: center;
+    background-size: cover;
 
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.wrap{
+    margin:auto;
+    width :300px;
+}
