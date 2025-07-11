@@ -18,6 +18,25 @@ This repository serves as a personal learning journal and a collection of practi
 
 The repository includes examples for:
 
+* *HTML & Web APIs:*
+    * audio&video elements
+    * canvas demo RG
+    * canvas demo
+    * girl (Likely an image or related to image handling)
+    * imageCanvas
+    * Krishna trance
+    * krishna
+    * linear_gradient
+    * Local clickCount
+    * my blog
+    * radial gradient
+    * session clickCount
+    * svg_shapes
+    * track_location (Likely Geolocation API)
+    * watch position & clear position (Likely Geolocation API)
+    * webStorage (Local Storage/Session Storage)
+    * WebWorker1 (Web Workers)
+
 * *CSS:*
     * css_box_model
     * css_selectors
@@ -25,6 +44,9 @@ The repository includes examples for:
     * grid
     * gridstyles
     * styles, styles2, styles3 (Likely general CSS styling examples)
+    * styles (within FEDCOURSE - likely related to login pages)
+    * testcss
+
 * *JavaScript:*
     * Axios (Likely an example using the Axios library for HTTP requests)
     * calculator (Multiple instances, possibly different versions or parts of a calculator project)
@@ -36,11 +58,16 @@ The repository includes examples for:
     * form elements
     * higherorderfunctions (Hof)
     * stack operations
+
+* *Projects/Forms:*
+    * Login page
+    * login page2
+
 * *React:*
     * BMIcalculator (A React component for BMI calculation)
     * Creating React Application (Likely setup or basic React app example)
 
-*Note: Some files might be duplicates or different iterations of the same project (e.g., calculator).*
+*Note: Some files might be duplicates or different iterations of the same project (e.g., calculator, canvas demo, Login page).*
 
 ## How to Use
 
@@ -52,9 +79,9 @@ To explore these examples:
     
 2.  *Navigate to the specific folder:*
     bash
-    cd YOUR_REPOSITORY_NAME/css_box_model # or any other folder
+    cd YOUR_REPOSITORY_NAME/FEDCOURSE/Login page # or any other folder/file
     
-3.  *Open the HTML files in your browser* to see the CSS and JavaScript examples in action. For React projects, you might need to install dependencies and run a development server (refer to the specific project's instructions if available).
+3.  *Open the HTML files in your browser* to see the CSS, JavaScript, and HTML examples in action. For React projects, you might need to install dependencies and run a development server (refer to the specific project's instructions if available).
 
 ## Contributing
 
