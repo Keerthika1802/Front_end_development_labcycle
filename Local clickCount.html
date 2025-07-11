@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Local click count</title>
+</head>
+<body>
+<button onclick="count()">ClickMe</button>
+<p id="p"/>
+<script>
+function count()
+{
+if(typeof(Storage)!=="undefined")
+{
+if(localStorage.cc)
+    localStorage.cc=Number(localStorage.cc)+1;
+else
+    localStorage.cc=1;
+document.getElementById("p").innerHTML="you have clicked the button"+localStorage.cc+"time(s)";
+}
+else
+{
+console.log("your browser is not supporting web storage");
+}
+}
+</script>
+</body>
+</html>

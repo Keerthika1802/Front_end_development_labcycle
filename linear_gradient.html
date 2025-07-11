@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Gradient Demo</title>
+</head>
+<body>
+<svg width=400 height=400>
+<defs>
+<linearGradient X1="0%" Y1="0%" X2="100%" Y2="0%" id="lg1">
+<stop offset=0 stop-color='red' stop-opacity=1 />
+<stop offset=100 stop-color="yellow" stop-opacity=1 />
+</linearGradient>
+</defs>
+<circle cx="200" cy="200" r="100" fill="url(#lg1)"/>
+</svg>
+
+<svg width=400 height=400>
+<defs>
+<linearGradient X1="100%" Y1="0%" X2="0%" Y2="0%" id="lg2">
+<stop offset=0 stop-color='red' stop-opacity=1 />
+<stop offset=100 stop-color="yellow" stop-opacity=1 />
+</linearGradient>
+</defs>
+<circle cx="200" cy="200" r="100" fill="url(#lg2)"/>
+</svg>
+
+<svg width=400 height=400>
+<defs>
+<linearGradient X1="0%" Y1="100%" X2="0%" Y2="0%" id="lg3">
+<stop offset=0 stop-color='red' stop-opacity=1 />
+<stop offset=100 stop-color="yellow" stop-opacity=1 />
+</linearGradient>
+</defs>
+<circle cx="200" cy="200" r="100" fill="url(#lg3)"/>
+</svg>
+
+<svg width=400 height=400>
+<defs>
+<linearGradient X1="0%" Y1="0%" X2="0%" Y2="100%" id="lg4">
+<stop offset=0 stop-color='red' stop-opacity=1 />
+<stop offset=100 stop-color="yellow" stop-opacity=1 />
+</linearGradient>
+</defs>
+<circle cx="200" cy="200" r="100" fill="url(#lg4)"/>
+</svg>
+</body>
+</html> 

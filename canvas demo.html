@@ -1,0 +1,16 @@
+<html>
+ <head>
+  <title>canvas demo</title>
+ </head>
+ <body>
+  <canvas width=300 height=300 id="c" style="border:1px solid"/>
+  <script>
+   var can=document.getElementById('c');
+   var ctx=can.getContext("2d");
+   ctx.fillText("Hello",10,10);
+   ctx.moveTo(20,20);
+   ctx.lineTo(70,70);
+   ctx.stroke();
+  </script>
+ </body>
+</html>

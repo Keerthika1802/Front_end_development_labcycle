@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>WebStorage Demo</title>
+</head>
+<body>
+<button onclick="setData()">SET</button>
+<button onclick="getData()">GET</button>
+<p id="txt"/>
+<script>
+function setData()
+{
+if(typeof(Storage)!=="undefined")
+{
+localStorage.setItem("FirstName","Keerthika Reddy");
+localStorage.setItem("LastName","Arumalla");
+}
+else{
+document.getElementById("txt").innerHTML="your browser is not capable of string information";
+}
+}
+function getData(){
+if(localStorage.FirstName)
+{
+document.getElementById("txt").innerHTML="FirstName="+localStorage.getItem("FirstName")+"<br> lastname="+ localStorage.getItem("LastName");
+}
+}
+</script>
+</body>
+</html>

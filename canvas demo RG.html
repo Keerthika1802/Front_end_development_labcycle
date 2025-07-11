@@ -1,0 +1,18 @@
+<html>
+ <head>
+ <title>Radial gradient</title>
+ </head>
+ <body>
+  <canvas width="300" height="300" style="border:1px solid blue" id="c" />
+  <script>
+   var can=document.getElementById('c');
+   var ctx=can.getContext("2d");
+   var rg=ctx.createRadialGradient(150,75,15,150,75,150)
+   rg.addColorStop(0,"blue");
+   rg.addColorStop(0.5,"yellow");
+   rg.addColorStop(1,"red");
+   ctx.fillStyle=rg;
+   ctx.fillRect(10,10,280,130);
+  </script>
+ </body>
+</html>

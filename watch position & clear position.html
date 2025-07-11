@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Watch position Demo</title>
+</head>
+<body>
+<button onclick="startWatch()">Watch Position</button>
+<button onclick="stopWatch()">Clear Position</button>
+<div id="geo"></div>
+<script>
+var wp;
+function startWatch()
+{
+if(navigator.geolocation)
+{
+navigator.geolocation.watchPosition(showPosition);
+}
+else
+{
+document.getElementById("geo").innerHTML="doesnot support";
+}
+}
+function showPosition(pos)
+{
+document.getElementById("geo").innerHTML="Latitude = "+pos.coords.latitude+"<br>Longitude = "+pos.coords.longitude+"<br>Altitude="+pos.coords.altitude+"<br>Accuracy = "+pos.coords.accuracy+"<br>Speed = "+pos.coords.speed+"<br>DateTime = "+pos.coords.datetime;
+}
+function stopWatch()
+{
+if(wp)
+{
+navigator.geolocation.clearWatch(wp);
+wp = null;
+alert("watch position is successfully stoped");
+}
+}
+function showError(error)
+{
+switch(error.code)
+{
+case error.PERMISSION_DENIED :
+alert("permission denied");
+break;
+case error.POSITION_UNAVAILABLE :
+alert("location unavailable");
+break;
+case error.TIMEOUT :
+alert("Timeout error");
+break;
+case error.UNKNOWN_ERROR :
+alert("some unknown error occured.");
+break;
+}
+}
+</script>
+</body>
+</html>
